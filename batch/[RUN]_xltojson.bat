@@ -2,4 +2,4 @@
 cd ..
 cd scripts
 python.exe -m xltojson
-timeout 15
+timeout 2

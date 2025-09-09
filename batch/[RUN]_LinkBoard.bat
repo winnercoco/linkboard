@@ -1,4 +1,4 @@
 @echo off
 cd ..
 python.exe -m streamlit run app.py
-timeout 5
+timeout 2
