@@ -95,7 +95,7 @@ def matches_filters(movie):
         return False
 
     movie_actors = [movie.get("star_1", ""), movie.get("star_2", ""), movie.get("star_3", "")]
-    if actors_selected and not all(actor in movie_actors for actor in actors_selected):
+    if actors_selected and not any(actor in movie_actors for actor in actors_selected):
         return False
 
     movie_positions = [movie.get("pos_1", ""), movie.get("pos_2", ""), movie.get("pos_3", "")]
